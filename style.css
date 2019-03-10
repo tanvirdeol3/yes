@@ -1,0 +1,507 @@
+:root {
+    --darkRed: #9d1c1c;
+    --lightGray: #dddddd;
+    --darkGray: #626262;
+    --lightRed: #dd5151;
+    --shadow: 2px 2px 5px #555;
+
+}
+@font-face {
+    font-family: Prismane;
+    src: url(GlueGun.otf);
+  }
+/* Navbar Code Here */
+.navbar {
+    background-color: var(--darkRed);
+    display: grid;
+    grid-template-columns: 10% 31% 7.8% 14% 12% 6.2% 14%;
+    box-shadow: var(--shadow);
+    grid-gap: 5px;
+    
+
+
+}
+body{
+    background-color: #eee;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-family: Prismane;
+    letter-spacing: 3px;
+    line-height: 55px;
+    text-align: center;
+    font-size: 24px;
+    
+
+    
+
+}
+.navbar img {
+    width: 45px;
+    padding-left: 40px;
+    transform: translate(8px , 7px);
+
+}
+.navbar h3 {
+    
+    text-align: left;
+    color: white;
+    
+    font-family: Prismane;
+    letter-spacing: 7px;
+    margin: 0;
+    line-height: 55px;
+    padding-left: 5px;
+    font-size: 36px;
+    opacity: 0.85;
+    font-weight: 100;
+    
+ 
+    
+}
+/* Front Page Code */
+.frontPage {
+    position: relative;
+    
+   background-color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+
+    }
+
+.Subtitle {
+    position: absolute;
+    top: -3%;
+    bottom: auto;
+    left: 42%;
+    font-size: 3vw;
+    font-family: Prismane;
+    letter-spacing: 7px;
+    color: var(--darkRed);
+    font-weight: 100;
+}
+.Title {
+    position: absolute;
+    top: 7%;
+    bottom: auto;
+    left: 26%;
+    right: auto;
+    font-family: Prismane;
+    letter-spacing: 9px;
+    color: var(--darkRed);
+    font-size: 4.5vw;
+    font-weight: 100;
+    
+   
+    
+}
+
+.form {
+    z-index: 100;
+    height: 50%;
+    line-height: 0.5vw;
+    width: 25%;
+    position: absolute;
+    top: 30%;
+    bottom: auto;
+text-align: center;
+    right: 33.9%;
+    left: auto;
+    padding: 0 20px 20px 20px;
+    overflow: scroll;
+    
+
+background-color: var(--lightGray);
+padding-top: 0px;
+margin: 0px;
+box-shadow: var(--shadow);
+}
+.form h3 {
+    
+    transform: translateY(10px);
+    font-size: 1.7vw;
+    font-family: Prismane;
+    color: var(--darkGray);
+    letter-spacing: 3px;
+    font-weight: 100;
+}
+.form p {
+    font-size: 1.2vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.multitxt {
+    width: 100%;
+    height: 40px;
+   
+}
+.sngtxt {
+    width: 100%;
+    height: 1.5vw;;
+}
+/* Services Code Here */
+.icons {
+    background-color: var(--lightGray);
+    
+    display: grid;
+    margin: 0 10% 0;
+    grid-template-areas: 
+     'webDesign logoDesign graphicDesign';
+     justify-items: center;
+     text-align: center;
+
+}
+.sertxt {
+    font-family: Prismane;
+    background-color: var(--lightGray);
+    margin: 0 10% 0 10%;
+    line-height: 9vw;
+    color: var(--darkGray);
+    text-align: center;
+    letter-spacing: 6px;
+    font-weight: 100;
+    font-size: 3vw;
+}
+.services .circle {
+    width: 15vw; 
+    height: 15vw;
+    background-color:lightsalmon;
+    border-radius: 150px; 
+    box-shadow: var(--shadow);
+    position: relative;
+}
+.webDesign {
+    grid-area: webDesign;
+    position: relative;
+
+    
+}
+.logoDesign {
+    grid-area: logoDesign;
+    position: relative;
+}
+.graphicDesign {
+    grid-area: graphicDesign;
+    position: relative;
+}
+.webDesign img {
+    position: absolute;
+    top: 6%;
+    width: 75%;
+    left: 8%;
+    -webkit-transition: width 0.5s, height 0.5s;
+    transition: width 0.5s, height 0.5s;
+    
+    padding: 20px;
+
+
+}
+.logoDesign img {
+    position: absolute;
+    top: 6%;
+    width: 75%;
+    left: 5%;
+    
+    padding: 20px;
+    -webkit-transition: width 0.5s, height 0.5s;
+    transition: width 0.5s, height 0.5s;
+}
+.graphicDesign img {
+    position: absolute;
+    top: 3%;
+    width: 50%;
+    left: 8%;
+    padding: 10px 50px 0 50px;
+    -webkit-transition: width 0.5s, height 0.5s;
+    transition: width 0.5s, height 0.5s;
+}
+.services h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 550;
+    color: var(--darkGray);
+}
+.webDesign img:hover {
+width: 80%;
+}
+.logoDesign img:hover {
+width: 80%;
+}
+.graphicDesign img:hover {
+ width: 55%;
+}
+/* Values Code Here */
+.values {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 0 10% 0 10%;
+}
+.fastResults {
+    background-color: var(--darkRed);
+    color: white;
+
+}
+.fastResults h2 {
+    text-align: center;
+    font-family: Prismane;
+    letter-spacing: 9px;
+    font-weight: 100;
+    font-size: 36px;
+    
+}
+.fastResults p {
+    padding: 0 10% 10% 7%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    
+}
+.fastWebPage {
+    background-color: white;    
+    
+}
+.fastWebPage img{
+ display: block;
+ margin: auto;
+ transform: translateY(40%);
+}
+.loremIpsum {
+    background-color: white;   
+}
+.loremIpsum img {
+    display: block;
+    margin: auto;
+    transform: translateX(00%);
+}
+.responsive {
+    background-color: var(--darkRed);
+    color: white;
+}
+.responsive h2 {
+    text-align: center;
+    font-family: Prismane;
+    letter-spacing: 9px;
+    font-weight: 100;
+    font-size: 36px;
+}
+.responsive p {
+    padding: 0 10% 10% 7%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.transparency {
+    background-color: var(--darkRed);
+    color: white;
+}
+.transparency h2 {
+    text-align: center;
+    font-family: Prismane;
+    letter-spacing: 9px;
+    font-weight: 100;
+    font-size: 36px;;
+}
+.transparency p {
+    padding: 0 10% 10% 7%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.magnifyingGlass {
+    background-color: white;   
+}
+.magnifyingGlass img{
+    display: block;
+    margin: auto;
+    transform: translateY(12%);
+    padding-bottom: 20%;
+}
+
+/* Portfolio Code Here*/
+.portfolio {
+    background-color: var(--lightGray);
+    margin: 0 10% 0 10%;
+    padding-bottom: 3%;
+}
+.boxes{
+    background-color: var(--lightGray);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:  25px;
+    padding: 0 10% 0 10%;
+    
+}
+.portfolio h1 {
+    color: var(--darkGray);
+    text-align: center;
+    font-family: Prismane;
+    font-weight: 100;
+    letter-spacing: 5px;
+    font-size: 36px;
+    padding-top: 3%;
+    
+
+}
+.portfolio p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: var(--darkGray);
+    font-size: 20px;
+}
+.borderbox {
+    border: 15px solid whitesmoke;
+    box-shadow: var(--shadow);
+    width: 350px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    color: var(--darkGray);
+    -webkit-transition: width 0.5s, height 0.5s;
+    transition: width 0.5s, height 0.5s;
+
+}
+.borderbox:hover {
+    height: 230px;
+    width: 380px;
+
+}
+
+/* Ready to Work Code Here*/
+
+.readytowork {
+    margin: 0 10% 0 10%;
+    background-color: white;
+    position: relative;
+    
+}
+.readytowork img {
+    width: 100%;
+    
+}
+.readytowork form {
+    position: absolute;
+    background-color: var(--lightGray);
+    box-shadow: var(--shadow);
+    padding: 0 30px 30px 30px;
+    width: 30%;
+    height: 61%;
+    right: 34%;
+    top: 10%;
+    overflow: scroll;
+    
+}
+.readytowork form p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+}
+.readytowork form h3 {
+    text-align: center;
+    font-family: Prismane;
+    letter-spacing: 7px;
+    color: var(--darkGray);
+    font-size: 2vw;
+    font-weight: 100;
+}
+.readytowork form input {
+    width: 100%;
+    
+}
+.readytowork form .submit {
+    width: 60px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.footer {
+    background-color: var(--darkRed);
+    margin: 0 10% 0 10%;
+}
+.footer p {
+    color: white;
+    padding: 2% 0 2% 5%;
+}
+@media only screen and (max-width: 650px) {
+    .Subtitle{ 
+    letter-spacing: 3px;
+    }
+    .Title{
+        letter-spacing: 3px;
+    }
+    .navbar img {
+        display: none;
+    }
+    .navbar h3 {
+        display: none;
+    }
+    .navbar {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+/* Services */
+    .icons {
+        grid-template-areas: 
+        'webDesign' 'logoDesign' 'graphicDesign';
+      }
+      .circle {
+          opacity: 0;
+      }
+      .graphicDesign img {
+          width: 39%;
+          top:  -3%;
+          left: -8%;
+      }
+      .graphicDesign img:hover{
+          width: 45%;
+      }
+      .logoDesign img {
+          top: -3%;
+          left: -6%;
+      }
+      .webDesign img {
+          top: -3%;
+          left: -6%;
+      }
+      h1 {
+          font-size: 24px;
+      }
+      /* Values */
+      .values {
+          grid-template-areas: 'fastResults'
+          'fastWebPage'
+          'responsive'
+          'loremIpsum'
+          'transparency'
+          'magnifyingGlass'
+      }
+      .fastResults{
+        grid-area: fastResults;
+      }
+      .fastWebPage{
+        grid-area: fastWebPage;
+      }
+      .loremIpsum{
+        grid-area: loremIpsum;
+      }
+      .responsive{
+        grid-area: responsive;
+      }
+      .transparency{
+        grid-area: transparency;    
+      }
+      .magnifyingGlass{
+        grid-area: magnifyingGlass;
+      }
+      .fastWebPage img{
+          transform: translateY(20%);
+          padding: 10% 0 10% 0;
+      }
+      /* Portfolio */
+      .boxes {
+          grid-template-columns: 1fr;
+      }
+  }
+  
+  
